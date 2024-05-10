@@ -1,54 +1,63 @@
-## Project in Progress - [Project Name]
+## Network Utility Script
 
-This is a README.md file for your project currently under development. Feel free to adapt and expand it as your project progresses.
+**Description:**
 
-** Project Description:**
+This versatile script offers various functionalities related to network information, hostname management, and potentially additional features in the future (like proxy configuration).
 
-* Briefly describe your project's purpose and what problem it aims to solve.
-* Mention any key features or functionalities you envision (optional).
+**Current Status:**
 
-** Development Status:**
+This project is currently under development (**Beta** stage). Some functionalities are implemented, while others are planned for future versions.
 
-* Indicate the current stage of development (e.g., idea, prototype, alpha, beta).
-* Briefly explain your next steps or development roadmap (optional).
+**Installation (if applicable):**
 
-** Installation (if applicable):**
+1. Save the script as `network_utility.sh`.
+2. Open a terminal and navigate to the directory where you saved the script.
+3. Make the script executable using the following command:
 
-* If your project requires installation, provide clear instructions here.
-* List any dependencies or prerequisites users need to have.
-* Consider using code blocks for installation commands. 
+   ```bash
+   chmod +x network_utility.sh
+   ```
 
-** Usage (if applicable):**
+4. (Optional) If you want to run the script from anywhere in your terminal, you can add the script's directory to your PATH environment variable. Refer to your system's documentation for details.
 
-* Explain how users can interact with your project once set up.
-* Include basic usage examples or tutorials (optional).
-* Consider adding screenshots or GIFs for visual demonstration (optional).
+**Usage:**
 
-** Contributing (if open-source):**
+1. Run the script with root privileges using `sudo`:
 
-* If you welcome contributions, outline your contribution guidelines here.
-* Mention preferred methods for submitting bug reports or feature requests.
-* Consider including a badge or linking to a dedicated Contribution Guide document (optional).
+   ```bash
+   sudo ./network_utility.sh
+   ```
 
-** License:**
+2. The script will display a menu with available options.
+3. Select the desired option using the corresponding number and press Enter.
 
-* Specify the license under which you distribute your project (e.g., MIT, GPL).
-* Include a license badge for easy reference.
+**Features (implemented):**
 
-**ℹ️ Additional Information (optional):**
+- **IP Status:**
+    - Shows current IP information (if using Tor, displays the Tor IP).
+    - Fetches additional details like geolocation, ISP, and organization (when available) using external APIs.
 
-* **Authors:** List the developers or contributors involved.
-* **Documentation:** Link to any separate documentation you have created.
-* **Contact:** Provide ways for users to reach you with questions or suggestions (optional).
+- **MAC Address:**
+    - Provides options to:
+        - Change the MAC address of your network interface (wlan0) for temporary spoofing. **Use with caution!** Spoofing can disrupt network connectivity and may be against your network's terms of service.
+        - Restore the original MAC address.
+        - View the current MAC address.
 
-**✨ Stay Connected (optional):**
+- **Hostname:**
+    - Allows you to:
+        - Change your system's hostname (temporary change). **Be aware of potential network issues!** Changing your hostname could affect how other devices recognize your system.
+        - Restore the original hostname.
+        - View the current hostname.
 
-* Include links to your project's website, repository, or social media channels (if applicable).
+**Planned Features:**
 
-**Remember:**
+- **Proxy Configuration:**
+    - Functionality to configure proxy settings (Tor, i2p) is planned for future development.
 
-* Maintain a well-structured and easy-to-read format.
-* Use clear and concise language.
-* Update the README regularly as your project evolves.
+**Important Notes:**
 
-This template provides a starting point for your "project in progress" README. You can customize it based on your specific project requirements and add more details as your development progresses.
+- **Root Privileges:** The script requires root privileges for certain functionalities like changing the MAC address or hostname.
+- **Caution:** Changing the MAC address or hostname can have network-related consequences. Use these features responsibly and understand their potential impacts.
+- **Customization:** Feel free to customize the script's behavior or add features based on your specific needs. Refer to the script's code for details.
+
+
