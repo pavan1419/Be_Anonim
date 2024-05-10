@@ -10,12 +10,12 @@ This project is currently under development (**Beta** stage). Some functionaliti
 
 **Installation (if applicable):**
 
-1. Save the script as `network_utility.sh`.
+1. Save the script as `main.sh`.
 2. Open a terminal and navigate to the directory where you saved the script.
 3. Make the script executable using the following command:
 
    ```bash
-   chmod +x network_utility.sh
+   chmod +x main.sh
    ```
 
 4. (Optional) If you want to run the script from anywhere in your terminal, you can add the script's directory to your PATH environment variable. Refer to your system's documentation for details.
@@ -25,7 +25,7 @@ This project is currently under development (**Beta** stage). Some functionaliti
 1. Run the script with root privileges using `sudo`:
 
    ```bash
-   sudo ./network_utility.sh
+   sudo ./main.sh
    ```
 
 2. The script will display a menu with available options.
