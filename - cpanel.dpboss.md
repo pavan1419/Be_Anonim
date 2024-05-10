@@ -1,0 +1,11 @@
+  - cpanel.dpboss.services
+  - cpcalendars.dpboss.services
+  - webmail.dpboss.services
+  - dpsboss.dpboss.services
+  - www.dpsboss.dpboss.services
+  - webdisk.dpboss.services
+  - *.dpboss.services
+  - dpboss.services
+  - cpcontacts.dpboss.services
+  - mail.dpboss.services
+  - www.dpboss.services
